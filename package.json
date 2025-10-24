@@ -2,24 +2,29 @@
   "name": "wallup",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://github.com/onurdevs/wallup#readme",
+  "bugs": {
+    "url": "https://github.com/onurdevs/wallup/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onurdevs/wallup.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "bcryptjs": "^3.0.2",
-    "cloudinary": "^2.8.0",
+    "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.19.2",
-    "multer": "^2.0.2",
-    "streamifier": "^0.1.1"
+    "mongodb": "^6.20.0",
+    "mongoose": "^8.19.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
