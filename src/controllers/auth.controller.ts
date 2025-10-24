@@ -35,7 +35,7 @@ export const refreshToken = async (req, res) => {
 
         res.cookie("access_token", newAccessToken, {
             httpOnly: true,
-            sameStrict: "strict",
+            sameSite: "strict",
             maxAge: 60 * 60 * 1000
         });
 
@@ -43,7 +43,6 @@ export const refreshToken = async (req, res) => {
             message: "Token yenilendi"
         });
     } catch (error) {
-        console.error("")
         return res.status(403).json({
             message: "Refresh token geçersiz veya süresi dolmuş"
         })
@@ -100,7 +99,7 @@ export const login = async (req, res) => {
 
         res.cookie("access_token", accessToken, {
             httpOnly: true,
-            sameStrict: "strict",
+            sameSite: "strict",
             maxAge: 60 * 60 * 1000 // 1 saat
         })
 
