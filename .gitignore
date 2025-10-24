@@ -1,0 +1,43 @@
+# Node.js bağımlılıkları
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Derlenmiş dosyalar / çıktılar
+dist/
+build/
+out/
+coverage/
+*.log
+
+# TypeScript build dosyaları
+*.tsbuildinfo
+
+# Ortam değişkenleri
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Sistem dosyaları
+.DS_Store
+Thumbs.db
+
+# IDE / editör dosyaları
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test ve geçici dosyalar
+temp/
+tmp/
+.cache/
+.nyc_output/
+
+# Paket yöneticisi kilit dosyaları (isteğe bağlı)
+# Eğer ekipte tek bir paket yöneticisi kullanılacaksa sadece biri tutulabilir
+# packa
