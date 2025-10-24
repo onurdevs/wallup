@@ -1,18 +1,10 @@
 import { Router } from "express";
+import { login, logout, refreshToken, register } from "../controllers/auth.controller.ts";
 
 const router = Router()
-router.post("/register", (req, res) => {
-    res.send("register a geldik")
-});
-router.post("/login", (req, res) => {
-    const {email, password} = req.body;
-    res.json({
-        message:"geldi",
-        result:{
-            email: email,
-            password: password
-        }
-    })
-})
+router.post("/register", register);
+router.post("/login", login);
+router.post("/refresh", refreshToken);
+router.post("/logout", logout);
 
 export default router;

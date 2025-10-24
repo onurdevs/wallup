@@ -3,9 +3,7 @@ import mongoose from "mongoose";
 export const connectDB = async () => {
     try {
         await mongoose.connect(process.env.MONGODB_URI, {
-            dbName: 'wallup',
-            useNewUrlParser: true,
-            useUnifiedTopology: true
+            dbName: 'wallup'
         })
         console.log("DB Bağlantısı başarılı")
     } catch (error) {
